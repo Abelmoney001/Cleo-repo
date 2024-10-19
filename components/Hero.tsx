@@ -2,7 +2,7 @@
 import React, { useEffect } from "react"
 import { Video } from "./Video"
 import Image from "next/image"
-import { Button } from "antd"
+import { Avatar, Button } from "antd"
 import Link from "next/link"
 import gsap from "gsap"
 import { TextPlugin } from "gsap/all"
@@ -27,22 +27,34 @@ export const Hero = () => {
           <div className="md:w-[45%]">
             <div className="hero-text">
               <h3 className="lg:text-6xl md:text-5xl text-4xl leading-tight uppercase lg:mb-16 md:mb-10 my-7 mb-5">
-                First All in one{" "}
-                <span className="bg-green-500 leading-7">#MEMEFI</span> layer on{" "}
-                <span className="bg-yellow- leading-7">#Bitcoin</span>
+                The Ai newscaster{" "}
+                <div className="inline-flex items-center gap-2">
+                  <span>for</span>
+                  <Avatar.Group>
+                    <Avatar
+                      src="/images/cleo.jpg"
+                      className="border-0 md:h-[3rem] md:w-[3rem]"
+                    />
+                    <Avatar
+                      src="/images/stx.svg"
+                      className="border-0 md:h-[3rem] md:w-[3rem]"
+                    />
+                  </Avatar.Group>
+                  <span className="bg-yellow- leading-7">Stacks</span>
+                </div>
               </h3>
             </div>
             <div className="py-4 border-t-[1.5px] border-t-white/35 hero-text">
               <div className="flex text-white/80 gap-3 justify-between overflow-y-hidden">
                 <h5 className="md:text-lg text-sm uppercase to-up">
-                  Our solutions
+                  I&apos;m Cleo
                 </h5>
                 <div>
                   <h5 className="md:text-lg text-sm uppercase to-up">
-                    We provide the full
+                    A lady cat
                   </h5>
                   <h5 className="md:text-lg text-sm uppercase to-up">
-                    Finance approach
+                    Memecoin
                   </h5>
                 </div>
               </div>
@@ -57,27 +69,25 @@ export const Hero = () => {
         <div className="flex justify-between md:flex-row flex-col">
           <div>
             <div className="flex items-center gap-2 hero-text">
-              <Image src={"/logo.svg"} height={42} width={42} alt="" />
+              <Image
+                src={"/images/cleo.jpg"}
+                height={42}
+                width={42}
+                alt=""
+                className="rounded-full"
+              />
               <div>
-                <p className=" text-xs">The future is here</p>
-                <p className=" text-xs">More to come.</p>
+                <p className=" text-xs typewriter-text">
+                  I bring you news from around
+                </p>
+                <p className=" text-xs typewriter-text-2">
+                  happenings on stacks.
+                </p>
               </div>
             </div>
             <div className="flex flex-col gap-3 md:mt-16 mt-4">
               <Link
-                href={"https://app.memegoat.io/"}
-                target="_blank"
-                className="hero-text"
-              >
-                <Button
-                  className="bg-transparent text-white md:w-[250px] w-full uppercase rounded-2xl hover:!bg-transparent hover:!border-white/35 hover:!text-white"
-                  size="large"
-                >
-                  Launch App
-                </Button>
-              </Link>
-              <Link
-                href={"https://games.memegoat.io/"}
+                href={"https://www.stacks.co/"}
                 target="_blank"
                 className="hero-text"
               >
@@ -85,7 +95,19 @@ export const Hero = () => {
                   className="bg-transparent text-white md:w-[200px] w-full uppercase rounded-2xl hover:!bg-transparent hover:!border-white/35 hover:!text-white"
                   size="large"
                 >
-                  Games
+                  Stacks
+                </Button>
+              </Link>
+              <Link
+                href={"https://www.stacks.co/explore/ecosystem"}
+                target="_blank"
+                className="hero-text"
+              >
+                <Button
+                  className="bg-transparent text-white md:w-[250px] w-full uppercase rounded-2xl hover:!bg-transparent hover:!border-white/35 hover:!text-white"
+                  size="large"
+                >
+                  Ecosystem
                 </Button>
               </Link>
             </div>

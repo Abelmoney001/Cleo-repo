@@ -16,37 +16,21 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL(config.BASE_URL),
-  title: "MemeGoat DeFi",
-  description:
-    "Launch | Swap | Raise liquidity | Deploy a pool | Play games | Earn | Promote",
-  keywords: [
-    "MemeGoat",
-    "MemeGoat App",
-    "Meme",
-    "Goat",
-    "MemeGoatSTX",
-    "blockchain",
-    "bitcoin",
-    "MemeGoat STX",
-    "MemeGoatSTX",
-    "MemeGoat Socialfi",
-    "MemeGoat website",
-    "MemeGoat application",
-    "MemeGoat launchpad",
-  ],
-  publisher: "MemeGoat",
+  title: "Cleo",
+  description: "The Cat Ai news caster for stacks ",
+  keywords: ["Cleo Ai newscaster", "Stacks", "Cleo"],
+  publisher: "Cleo",
   openGraph: {
-    title: "MemeGoat DeFi",
-    description:
-      "Launch | Swap | Raise liquidity | Deploy a pool | Play games | Earn | Promote",
-    siteName: "MemeGoat",
-    url: "https://app.memegoat.io/",
+    title: "Cleo",
+    description: "The Cat Ai news caster for stacks ",
+    siteName: "Cleo",
+    url: config.BASE_URL,
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://res.cloudinary.com/osaretinfrank/image/upload/v1723235872/204adf06-dc10-42a0-a5ce-a52b4448103b_ym2sfn.jpg",
-        alt: "MemeGoat",
+        url: "/images/cleo.jpg",
+        alt: "Cleo",
         width: 1200,
         height: 675,
       },
@@ -55,15 +39,14 @@ export const metadata: Metadata = {
   twitter: {
     images: [
       {
-        url: "https://res.cloudinary.com/osaretinfrank/image/upload/v1723235872/204adf06-dc10-42a0-a5ce-a52b4448103b_ym2sfn.jpg",
-        alt: "MemeGoat",
+        url: "/images/cleo.jpg",
+        alt: "Cleo",
       },
     ],
     card: "summary_large_image",
     site: "@GoatCoinSTX",
-    title: "MemeGoat DeFi",
-    description:
-      "Launch | Swap | Raise liquidity | Deploy a pool | Play games | Earn | Promote",
+    title: "Cleo",
+    description: "The Cat Ai news caster for stacks ",
   },
 }
 
