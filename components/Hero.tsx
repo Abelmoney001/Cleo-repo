@@ -6,6 +6,7 @@ import { Avatar, Button } from "antd"
 import Link from "next/link"
 import gsap from "gsap"
 import { TextPlugin } from "gsap/all"
+import { Twitter } from "lucide-react"
 
 gsap.registerPlugin(TextPlugin)
 
@@ -104,41 +105,56 @@ export const Hero = () => {
                 className="hero-text"
               >
                 <Button
-                  className="bg-transparent text-white md:w-[250px] w-full uppercase rounded-2xl hover:!bg-transparent hover:!border-white/35 hover:!text-white"
+                  className="bg-transparent text-white md:w-[225px] w-full uppercase rounded-2xl hover:!bg-transparent hover:!border-white/35 hover:!text-white"
                   size="large"
                 >
                   Ecosystem
                 </Button>
               </Link>
+              <Link
+                href={"https://x.com/CleoAiSTX?t=r2h45IIL1ibTVbWvruufsw&s=09"}
+                target="_blank"
+                className="hero-text"
+              >
+                <Button
+                  className="bg-transparent text-white md:w-[250px] w-full uppercase rounded-2xl hover:!bg-transparent hover:!border-white/35 hover:!text-white"
+                  size="large"
+                  icon={<Twitter />}
+                >
+                  Twitter
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="grid md:grid-cols-3 md:gap-1 gap-7 md:w-[65%] mt-[50px]">
-            <div className="w-full h-[250px] bg-orange-500 p-4 md:p-6 rounded-2xl relative flex flex-col justify-between anime-cards">
-              <div className="absolute z-[-1] -top-[15px] right-0 w-[105px] h-[40px] bg-orange-500 rounded-2xl"></div>
+            <div className="w-full h-[250px] bg-pink-500 p-4 md:p-6 rounded-2xl relative flex flex-col justify-between anime-cards">
+              <div className="absolute z-[-1] -top-[15px] right-0 w-[105px] h-[40px] bg-pink-500 rounded-2xl"></div>
               <div>
-                <h3 className="text-2xl text-black">TVL</h3>
+                <h3 className="text-2xl text-black">Total supply</h3>
               </div>
               <div>
-                <h2 className="text-5xl text-black">$50,000</h2>
+                <h2 className="text-4xl text-black">500 Million</h2>
               </div>
             </div>
             <div className="w-full h-[250px] bg-slate-300 p-4 md:p-6 rounded-2xl relative flex flex-col justify-between anime-cards">
               <div className="absolute z-[-1] -top-[15px] right-0 w-[105px] h-[40px] bg-slate-300 rounded-2xl"></div>
               <div>
-                <h3 className="text-2xl text-black">Volume</h3>
+                <h3 className="text-2xl text-black">Launch</h3>
               </div>
               <div>
-                <h2 className="text-5xl text-black">$50,000</h2>
+                <h2 className="text-4xl text-black">450 Million</h2>
               </div>
             </div>
 
-            <div className="w-full h-[250px] bg-yellow-300 p-4 md:p-6 rounded-2xl relative flex flex-col justify-between anime-cards">
-              <div className="absolute z-[-1] -top-[15px] right-0 w-[105px] h-[40px] bg-yellow-300 rounded-2xl"></div>
+            <div className="w-full h-[250px] bg-[#242424] p-4 md:p-6 rounded-2xl relative flex flex-col justify-between anime-cards">
+              <div className="absolute z-[-1] -top-[15px] right-0 w-[105px] h-[40px] bg-[#242424] rounded-2xl"></div>
               <div>
-                <h3 className="text-2xl text-black">Price</h3>
+                <h3 className="text-xl text-white">
+                  Fan base and ecosystem growth
+                </h3>
               </div>
               <div>
-                <h2 className="text-5xl text-black">$50,000</h2>
+                <h2 className="text-4xl text-white">50 Million</h2>
               </div>
             </div>
           </div>

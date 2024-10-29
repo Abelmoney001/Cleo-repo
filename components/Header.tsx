@@ -26,7 +26,7 @@ export const Header = () => {
         </Link>
 
         <Link
-          href={"https://twitter.com/goatcoinstx"}
+          href={"https://x.com/CleoAiSTX?t=r2h45IIL1ibTVbWvruufsw&s=09"}
           target="_blank"
           className="inline-flex items-center gap-1"
         >
