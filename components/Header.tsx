@@ -18,10 +18,18 @@ export const Header = () => {
         <p className="text-white font-semibold text-sm">Cleo</p>
       </div>
       <nav className="inline-flex items-center gap-3 md:gap-5 md:text-[15px] text-xs">
-        <Link href={"https://solana.com/"} target="_blank">
-          Stacks
+        <Link
+          href={"https://solana.com/"}
+          target="_blank"
+          className="bg-gradient-to-t from-purple-400/80 to-green-300 bg-clip-text hover:text-transparent"
+        >
+          Solana
         </Link>
-        <Link href={"https://solana.org/"} target="_blank">
+        <Link
+          href={"https://solana.org/"}
+          target="_blank"
+          className="bg-gradient-to-t from-purple-400/80 to-green-300 bg-clip-text hover:text-transparent"
+        >
           Ecosystem
         </Link>
 
