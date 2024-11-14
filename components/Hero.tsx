@@ -37,11 +37,11 @@ export const Hero = () => {
                       className="border-0 md:h-[3rem] md:w-[3rem]"
                     />
                     <Avatar
-                      src="/images/stx.svg"
+                      src="/images/solana.jpg"
                       className="border-0 md:h-[3rem] md:w-[3rem]"
                     />
                   </Avatar.Group>
-                  <span className="bg-yellow- leading-7">Stacks</span>
+                  <span className="bg-yellow- leading-7">Solana</span>
                 </div>
               </h3>
             </div>
@@ -88,7 +88,7 @@ export const Hero = () => {
             </div>
             <div className="flex flex-col gap-3 md:mt-16 mt-4">
               <Link
-                href={"https://www.stacks.co/"}
+                href={"https://solana.com/"}
                 target="_blank"
                 className="hero-text"
               >
@@ -96,11 +96,11 @@ export const Hero = () => {
                   className="bg-transparent text-white md:w-[200px] w-full uppercase rounded-2xl hover:!bg-transparent hover:!border-white/35 hover:!text-white"
                   size="large"
                 >
-                  Stacks
+                  Solana
                 </Button>
               </Link>
               <Link
-                href={"https://www.stacks.co/explore/ecosystem"}
+                href={"https://solana.org/"}
                 target="_blank"
                 className="hero-text"
               >
@@ -127,8 +127,8 @@ export const Hero = () => {
             </div>
           </div>
           <div className="grid md:grid-cols-3 md:gap-1 gap-7 md:w-[65%] mt-[50px]">
-            <div className="w-full h-[250px] bg-pink-500 p-4 md:p-6 rounded-2xl relative flex flex-col justify-between anime-cards">
-              <div className="absolute z-[-1] -top-[15px] right-0 w-[105px] h-[40px] bg-pink-500 rounded-2xl"></div>
+            <div className="w-full h-[250px] bg-gradient-to-t from-purple-500/80 to-green-500 p-4 md:p-6 rounded-2xl relative !z-[2] flex flex-col justify-between anime-cards">
+              <div className="absolute !z-[-1] -top-[15px] right-0 w-[105px] h-[40px] bg-green-500 rounded-2xl"></div>
               <div>
                 <h3 className="text-2xl text-black">Total supply</h3>
               </div>
